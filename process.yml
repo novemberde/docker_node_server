@@ -1,0 +1,7 @@
+apps:
+    - script   : 'src/bin/www'
+      name     : 'docker_node_server'
+      exec_mode: 'cluster'
+      instances: 2
+      max_restarts : 20
+      min_uptime: "10s"

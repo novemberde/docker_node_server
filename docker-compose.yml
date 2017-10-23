@@ -9,7 +9,7 @@ services:
       - "3000:3000"
     environment: 
       - PORT=3000
-    volumes: 
-#       - src:/src
+#     volumes: 
+#       - log:/src
 # volumes: 
-#   src: {}
+#   log: {}
