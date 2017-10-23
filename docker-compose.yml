@@ -17,4 +17,6 @@ services:
       restart_policy:
         condition: on-failure
     volumes: 
-      - node-server: /src
+      - src: /src
+volumes: 
+  src: {}
