@@ -1,7 +1,5 @@
 FROM novemberde/node-pm2
 
-MAINTAINER KH BYUN "novemberde.github.io"
-
 # RUN npm install -g pm2 node-gyp
 
 ENV NODE_ENV production
@@ -13,4 +11,4 @@ COPY ./ /src
 
 RUN npm install --prefix /src
 
-CMD ["pm2-docker", "/src/app.js"]
+CMD ["node", "/src/bin/www"]

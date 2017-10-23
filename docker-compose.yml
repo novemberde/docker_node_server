@@ -1,7 +1,6 @@
 version: "3"
 services:
   webapp:
-    image: "novemberde/node-pm2"
     build:
       context: ./
       dockerfile: Dockerfile
