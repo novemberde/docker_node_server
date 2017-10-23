@@ -17,6 +17,6 @@ services:
       restart_policy:
         condition: on-failure
     volumes: 
-      - src: /src
+      - src:/src
 volumes: 
   src: {}
