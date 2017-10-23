@@ -57,5 +57,4 @@ typings/
 # dotenv environment variables file
 .env
 
-
-docker_node_server.zip
+*.zip
