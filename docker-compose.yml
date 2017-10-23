@@ -1,0 +1,30 @@
+version: "3"
+services:
+  webapp:
+    image: "novemberde/node-pm2"
+    build:
+      context: ./
+      dockerfile: Dockerfile
+    ports:
+      - "3000:3000"
+    environment: 
+      - PORT=3000
+    # networks:
+    #   - my_net
+    deploy:
+      replicas: 1
+      update_config:
+        parallelism: 2
+        delay: 10s
+      restart_policy:
+        condition: on-failure
+
+# networks:
+#   my_net:
+#     driver: bridge
+#     # enable_ipv6: true
+#     ipam:
+#       driver: default
+#       config:
+#         - subnet: 172.16.238.0/24
+#         - subnet: 2001:3984:3989::/64

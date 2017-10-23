@@ -1,0 +1,25 @@
+{
+  "name": "docker_node_server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "node_modules/.bin/mocha spec/*",
+    "start": "node bin/www"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/novemberde/docker_node_server.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "homepage": "https://github.com/novemberde/docker_node_server.git#readme",
+  "dependencies": {
+    "express": "^4.15.2"
+  },
+  "devDependencies": {
+    "mocha": "^3.5.3",
+    "should": "^13.0.1",
+    "supertest": "^3.0.0"
+  }
+}
