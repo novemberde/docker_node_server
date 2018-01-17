@@ -15,6 +15,7 @@
   "license": "ISC",
   "homepage": "https://github.com/novemberde/docker_node_server.git#readme",
   "dependencies": {
+    "apicache": "^1.2.0",
     "express": "^4.15.2"
   },
   "devDependencies": {
